@@ -1,0 +1,19 @@
+{
+  "name": "disney-villains",
+  "version": "1.0.0",
+  "description": "In this two part exercise you are tasked with create a REST API for accessing Disney Villain data, complete with test suite.",
+  "main": ".eslintrc.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IkmosaO/disney-villains.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IkmosaO/disney-villains/issues"
+  },
+  "homepage": "https://github.com/IkmosaO/disney-villains#readme"
+}
