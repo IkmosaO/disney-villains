@@ -12,6 +12,6 @@ app.get('/villains/:slug', getVillainBySlug)
 
 app.post('/villains', bodyParser.json(), saveNewVillains)
 
-app.listen(1341, () => {
-  console.log('listening on port 1341...')
+app.listen(1337, () => {
+  console.log('listening on port 1337...')
 })
