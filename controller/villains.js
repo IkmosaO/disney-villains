@@ -1,4 +1,3 @@
-const villains = require('../villains')
 const models = require('../models')
 
 const getAllVillains = async (request, response) => {

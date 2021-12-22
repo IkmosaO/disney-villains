@@ -6,7 +6,5 @@ const villainsModel = (connection, Sequelize) => {
     slug: { type: Sequelize.STRING, allowNull: false }
   }, { paranoid: true })
 }
-// data MUST MATCH the column defenitions in our Database
 
 module.exports = villainsModel
-
