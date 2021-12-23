@@ -6,7 +6,7 @@ const getAllVillains = async (request, response) => {
 
     return response.send(villainsData)
   } catch (error) {
-    return response.status(500).send('Unable to retrieve team list, try again')
+    return response.status(500).send('Unable to retrieve villain list, try again')
   }
 }
 
@@ -19,7 +19,7 @@ const getVillainBySlug = async (request, response) => {
 
     return foundVillain ? response.send(foundVillain) : response.sendStatus(404)
   } catch (error) {
-    return response.status(500).send('Unable to retrieve team, please try again')
+    return response.status(500).send('Unable to retrieve villain, please try again')
   }
 }
 
@@ -35,7 +35,7 @@ const saveNewVillains = async (request, response) => {
 
     return response.status(201).send(newVillain)
   } catch (error) {
-    return response.status(500).send('Unable to save team, please try again')
+    return response.status(500).send('Unable to save villain, please try again')
   }
 }
 
