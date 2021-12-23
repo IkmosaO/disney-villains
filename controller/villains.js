@@ -6,7 +6,7 @@ const getAllVillains = async (request, response) => {
 
     return response.send(villainsData)
   } catch (error) {
-    return response.status(500).send('Unable to retrieve villain list, try again')
+    return response.status(500).send('Unable to retrieve all villains, please try again')
   }
 }
 

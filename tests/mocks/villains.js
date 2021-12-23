@@ -18,10 +18,17 @@ const singleVillain = {
   slug: 'captain-hook',
 }
 
-const newVillain = {
-  name: 'Ursula',
-  movie: 'The Little Mermaid',
-  slug: 'ursula',
+const postedVillain = {
+  name: 'Captain Hook',
+  movie: 'Peter Pan',
+  slug: 'captain-hook',
 }
 
-module.exports = { allVillains, singleVillain, newVillain }
+const createdVillain = {
+  id: 1,
+  name: 'Captain Hook',
+  movie: 'Peter Pan',
+  slug: 'captain-hook',
+}
+
+module.exports = { allVillains, singleVillain, postedVillain, createdVillain }
