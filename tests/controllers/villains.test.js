@@ -116,7 +116,7 @@ describe('controllers - villains', () => {
     })
 
     it('returns a 400 status when not all required fields are provided (missing location)', async () => {
-      const { name, movie } = postedVillain
+      const { name, movie } = postedVillain // WHY DOES THIS NEED TO BE MISSING A KEY? isnt postedVILLIAN BEING PULLED IN??
       const request = { body: { name, movie } }
 
       await saveNewVillains(request, response)
