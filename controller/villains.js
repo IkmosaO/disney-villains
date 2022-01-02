@@ -14,10 +14,9 @@ const getVillainBySlug = async (request, response) => {
   try {
     const { slug } = request.params
 
-    const foundVillain = await models.Villains.findOne({ where: { slug: slug } })
+    const pickedVillain = await models.Villains.findOne({ where: { slug }, attributes: ['name', 'movie', 'slug'], })
 
-
-    return foundVillain ? response.send(foundVillain) : response.sendStatus(404)
+    return pickedVillain ? response.send(pickedVillain) : response.sendStatus(404)
   } catch (error) {
     return response.status(500).send('Unable to retrieve villain, please try again')
   }
