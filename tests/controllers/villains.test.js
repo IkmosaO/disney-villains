@@ -76,7 +76,7 @@ describe('controllers - villains', () => {
 
       await getVillainBySlug(request, response)
 
-      expect(stubbedFindOne).to.have.been.calledWith({ where: { slug: 'captain-hook' } })
+      expect(stubbedFindOne).to.have.been.calledWith({ where: { slug: 'captain-hook' }, attributes: ['name', 'movie', 'slug'] })
       expect(stubbedSend).to.have.been.calledWith(singleVillain)
     })
 
@@ -97,7 +97,7 @@ describe('controllers - villains', () => {
 
       await getVillainBySlug(request, response)
 
-      expect(stubbedFindOne).to.have.been.calledWith({ where: { slug: 'captain-hook' } })
+      expect(stubbedFindOne).to.have.been.calledWith({ where: { slug: 'captain-hook' }, attributes: ['name', 'movie', 'slug'] })
       expect(stubbedStatus).to.have.been.calledWith(500)
       expect(stubbedStatusDotSend).to.have.been.calledWith('Unable to retrieve villain, please try again')
     })
